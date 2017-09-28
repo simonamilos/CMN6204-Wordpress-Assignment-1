@@ -2,15 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title><?=custom_title()?></title>
 </head>
 <body>
 
 	<nav id="main-menu">
-		<ul>
-			<li><a href="#">Page</a></li>
-			<li><a href="#">Page</a></li>
-			<li><a href="#">Page</a></li>
-			<li><a href="#">Page</a></li>
-		</ul>
+		<?php wp_nav_menu(['theme_location' => 'main' ]);  ?>
 	</nav>
